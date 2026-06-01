@@ -1,0 +1,31 @@
+====================================================
+  3D HILT BUILDER — Model Files Directory
+====================================================
+
+Place your .glb component files in THIS folder.
+
+Then open:
+  src/config/componentLibrary.js
+
+And set the `glbPath` for each component, e.g.:
+
+  glbPath: '/models/pommel_round.glb'
+
+The path must start with '/' and be relative to
+the public/ directory.
+
+Example file layout:
+  public/models/pommel_round.glb
+  public/models/pommel_wheel.glb
+  public/models/grip_straight.glb
+  public/models/guard_straight.glb
+  ... etc.
+
+Model tips:
+ - Scale your models to real-world units (metres)
+   A typical grip is ~1–1.2 m long, guard ~2 m wide.
+ - Orient models so their mating axis aligns with
+   the Y-axis (up) for easiest assembly.
+ - GLB format is supported directly; GLTF+BIN also
+   works if you change the extension to .gltf.
+====================================================

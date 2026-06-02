@@ -60,11 +60,11 @@ export default function ComponentLibrary() {
 
                     <div className="component-info">
                       <span className="component-name">{comp.name}</span>
-                      {comp.glbPath ? (
+                      {/* {comp.glbPath ? (
                         <span className="component-badge glb">GLB</span>
                       ) : (
                         <span className="component-badge placeholder">Box</span>
-                      )}
+                      )} */}
                     </div>
                   </div>
                 ))}

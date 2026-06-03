@@ -184,12 +184,21 @@ html, body, #root {
   border-color: rgba(63,185,80,0.4);
 }
 
-.toolbar-nav {
+.toolbar-nav-left {
   display: flex;
   align-items: center;
   gap: 2px;
   padding-right: 16px;
   border-right: 1px solid var(--border);
+}
+
+.toolbar-nav-right {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  margin-left: auto;
+  padding-left: 16px;
+  border-left: 1px solid var(--border);
 }
 
 .toolbar-nav-btn {

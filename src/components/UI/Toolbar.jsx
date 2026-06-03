@@ -55,16 +55,10 @@ export default function Toolbar() {
   return (
     <header className="toolbar">
 
-      {/* Page navigation */}
-      <nav className="toolbar-nav">
+      {/* Left — Home */}
+      <nav className="toolbar-nav-left">
         <button className="toolbar-nav-btn" onClick={() => navigate('/')}>
           Home
-        </button>
-        <button className="toolbar-nav-btn active" onClick={() => navigate('/builder')}>
-          Builder
-        </button>
-        <button className="toolbar-nav-btn" onClick={() => navigate('/checkout')}>
-          Summary
         </button>
       </nav>
 
@@ -72,6 +66,13 @@ export default function Toolbar() {
         <img src="/saber-ico.svg" alt="" className="toolbar-title-icon" />
         <span>Hardware Saber Builder</span>
       </div>
+
+      {/* Right — Summary */}
+      <nav className="toolbar-nav-right">
+        <button className="toolbar-nav-btn" onClick={() => navigate('/checkout')}>
+          Build Summary
+        </button>
+      </nav>
 
       
 
